@@ -12,8 +12,8 @@ class PokerTable extends Component {
         console.log(this.deck.cards);
         this.state={
             playerHand:[],
-            dealerHand: [],
-            commuinityHand: []
+            dealerHand:[],
+            communityHand: []
         }
     }
     // this method was made by us, not react method
@@ -27,8 +27,7 @@ class PokerTable extends Component {
         //be cause we removed 4
         this.setState({
             playerHand: [card1, card3],
-            dealerHand: [card2, card4],
-            communityHand: this.deck.cards
+            dealerHand: [card2, card4]
             
         })
     };
