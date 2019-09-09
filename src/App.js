@@ -4,8 +4,10 @@ import PokerTable from './components/PokerTable';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App container">
+      <div className="row">
       <PokerTable />
+      </div>
     </div>
   );
 }
