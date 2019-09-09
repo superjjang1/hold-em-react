@@ -20,6 +20,17 @@ class Deck{
     shuffle(){
         //i take a new deck of cards and shuffle them.
         console.log('shufflin');
+        //to shuffle: swap 2 indicies in the array, many many times
+    for(let i = 0; i < 1000000; i++){
+        let rand1 = Math.floor(Math.random() * 52);
+        let rand2 = Math.floor(Math.random() * 52);
+        //store this in temp
+        let temp = this.cards[rand1];
+        //put value of 2 in 1
+        this.cards[rand1]=this.cards[rand2]
+        // grab value of card 1 that we saved in temp
+        this.cards[rand2]=temp;
     }
+        }
 }
 export default Deck;

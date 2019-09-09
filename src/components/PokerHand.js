@@ -4,6 +4,7 @@ import Card from './Card';
 //job is to show a hand of cards
 
 function PokerHand(props){
+    console.log(props);
     return(
     <div className="poker-hand col-sm-12">
         <Card />
